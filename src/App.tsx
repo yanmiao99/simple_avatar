@@ -51,8 +51,21 @@ function App() {
                 d="M9 5l7 7-7 7"
               />
             </svg>
-            {isConfigOpen ? '隐藏' : '展开'}
+            工具
           </button>
+        </div>
+
+        {/* 新增的浮动窗口 */}
+        <div className="fixed left-4 bottom-4 animate-bounce z-20">
+          <div className="bg-white rounded-lg shadow-lg p-2">
+            <img
+              src="https://qny.weizulin.cn/images/202405240926029.jpg"
+              alt="Floating image"
+              className="w-24 h-24 object-cover rounded"
+            />
+            <div className="text-center">关注公众号</div>
+            <div className="text-center">获取更多信息</div>
+          </div>
         </div>
       </div>
       <Footer />
